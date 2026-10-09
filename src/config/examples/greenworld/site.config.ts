@@ -18,8 +18,9 @@ const config: SiteConfigInput = {
     tagline: "Dependable rooftop solar for homes and businesses across central Kerala.",
     description:
       "Green World Innovations designs, installs and services rooftop solar for homes, businesses and institutions in Kottayam and across central Kerala, with KSEB net-metering support.",
-    foundedYear: 2020, // [Replace with the real year]
-    logo: { light: "/brand/logo.svg", alt: "Green World Innovations logo", width: 180, height: 48 },
+    foundedYear: 2020,
+    registrationNumber: "GSTIN: 32ABEFG9671Q1ZP",
+    logo: { light: "/brand/logo.svg", alt: "Green World Innovations logo", width: 213, height: 48 },
     favicon: "/brand/favicon.svg",
     ogImage: "/brand/og-default.jpg",
   },
@@ -34,9 +35,10 @@ const config: SiteConfigInput = {
 
   theme: {
     colors: {
-      primary: "#15803D",
+      // From the logo: dark green (white text 5.3:1) and leaf green (dark text 8.6:1)
+      primary: "#327A3B",
       primaryForeground: "#FFFFFF",
-      secondary: "#FBBF24",
+      secondary: "#9AC63C",
       secondaryForeground: "#1B1B1B",
     },
     fonts: { heading: "Plus Jakarta Sans", body: "DM Sans" },
@@ -93,11 +95,11 @@ const config: SiteConfigInput = {
       headline: "Rooftop solar in Kottayam, built for Kerala roofs.",
       subheadline:
         "Cut your KSEB bill with a system sized to your home or business. Survey, design, installation and KSEB net-metering paperwork from a Kottayam-based team that stays around for service.",
-      primaryCta: { label: "Book a site survey", href: "/contact/" },
+      primaryCta: { label: "Book a free site survey", href: "/contact/" },
       whatsappCtaLabel: "Chat on WhatsApp",
-      image: { src: "/images/hero.svg", alt: "Solar panels on a tiled roof in Kerala" },
+      image: { src: "/images/hero.webp", alt: "Two-storey home with rooftop solar panels among palm trees beside a river, in evening sun" },
       highlights: ["Homes, businesses & institutions", "On-grid & hybrid with battery backup", "KSEB net metering", "PM Surya Ghar subsidy help"],
-      areas: ["Kottayam", "Kallara", "Ernakulam", "Alappuzha", "Idukki", "Pathanamthitta"],
+      areas: ["Kottayam", "Vaikom", "Kallara", "Cherthala", "Ernakulam", "Alappuzha"],
     },
     trustStats: [
       { value: "[000]+", label: "Installations completed" },
@@ -108,28 +110,28 @@ const config: SiteConfigInput = {
       { value: "[00]+", label: "Towns and localities served" },
     ],
     whyChooseUs: [
-      { icon: "Gauge", title: "Sized to your bills", body: "We design from your actual consumption and roof, not from a standard package." },
-      { icon: "ShieldCheck", title: "Built for monsoon and humidity", body: "Structures, fasteners and cabling chosen to cope with heavy rain and humid air." },
-      { icon: "FileCheck2", title: "KSEB paperwork handled", body: "We prepare and follow up the net-metering file so you don't have to chase it." },
-      { icon: "BadgeIndianRupee", title: "Itemised, written quotes", body: "See what each component costs and what warranty it carries before you decide." },
-      { icon: "Headset", title: "A local team that answers", body: "Call or WhatsApp the team that installed your system." },
-      { icon: "CalendarCheck", title: "Care after commissioning", body: "Cleaning, AMC and repairs keep your system performing through the seasons." },
+      { icon: "Gauge", title: "Sized from your KSEB bills", body: "We work from a year of your bills and your actual roof, not a standard package." },
+      { icon: "Home", title: "Every Kerala roof type", body: "Clay tiles, concrete terraces and sheet roofs over terraces, each with the right mounting to keep the rain out." },
+      { icon: "ShieldCheck", title: "Built for monsoon and lightning", body: "Rust-resistant structures, sealed connections, proper earthing and surge protection." },
+      { icon: "FileCheck2", title: "KSEB file handled", body: "We prepare the net-metering application and follow it up with your section office through to the new meter." },
+      { icon: "MapPin", title: "Based in Kottayam district", body: "Our office is at Kalambukad, near Kallara, so surveys and service visits across central Kerala are easy to arrange." },
+      { icon: "CalendarCheck", title: "Care through the seasons", body: "Pre-monsoon checks, post-monsoon cleaning and repairs, including for systems other companies installed." },
     ],
     savings: {
       headline: "See what solar could save you",
       costPerUnit: 6.5,
       unitsPerKwPerMonth: 110,
       benefits: [
-        { title: "Lower monthly bills", body: "Every unit you generate is a unit you don't buy from the grid." },
-        { title: "Protection from tariff hikes", body: "Your solar units don't get costlier when grid tariffs rise." },
-        { title: "More energy independence", body: "Produce a good part of your own power from your own roof." },
-        { title: "Low upkeep", body: "Periodic cleaning and a yearly check keep output healthy." },
+        { title: "Smaller KSEB bills", body: "Every unit your roof generates is a unit you don't buy from the grid." },
+        { title: "Strong output before the monsoon", body: "The sunny months from January to May, when fans and ACs run hardest, are when solar generates most." },
+        { title: "Less exposure to tariff revisions", body: "When tariffs are revised, the power you make yourself doesn't get dearer." },
+        { title: "Easy to watch from anywhere", body: "A monitoring app shows generation on your phone, even for family members living abroad." },
       ],
     },
     subsidy: {
       headline: "{{subsidyScheme}} subsidy for home solar",
       intro:
-        "Homes installing rooftop solar can get central financial assistance, paid into your bank account after the system is installed and inspected. We take you through the process, from portal registration to the claim.",
+        "Kerala homes installing rooftop solar can get central financial assistance, paid into your bank account once the system is installed, KSEB has fitted the new meter and the inspection is done. We take you through each step.",
       tiers: [
         { amount: "₹30,000", label: "per kW, for the first 2 kW" },
         { amount: "₹18,000", label: "for the 3rd kW" },
@@ -139,12 +141,12 @@ const config: SiteConfigInput = {
         "For individual homes. Housing societies and RWAs can get ₹18,000 per kW for common facilities such as lifts, pumps and EV charging.",
       checkedOn: "checked October 2026", // [Re-check the amounts on the portal before launch and every few months]
       sourceUrl: "https://pmsuryaghar.gov.in/",
-      helpHeadline: "We handle the process with you",
+      helpHeadline: "How we help with the subsidy",
       helpItems: [
-        "Site survey and the right system size for your bills",
+        "A roof survey and the right size for your KSEB bills",
         "Registration on the national rooftop solar portal",
-        "{{utilityName}} feasibility approval and {{netMeteringTerm}} paperwork",
-        "Installation, commissioning and inspection",
+        "KSEB feasibility approval and net-metering paperwork",
+        "Installation, new meter and inspection",
         "Guidance on the subsidy claim and documents",
       ],
       ctaLabel: "Check my subsidy eligibility",
@@ -155,60 +157,62 @@ const config: SiteConfigInput = {
     },
     packages: {
       headline: "Popular rooftop solar systems",
-      intro: "Typical sizes for homes and small businesses. We confirm the right size for your roof and bills at the site survey.",
+      intro: "Typical sizes for homes and institutions in central Kerala. We confirm the right size from your bills and roof at the survey.",
       items: [
         {
           name: "3 kW",
           kw: 3,
-          tagline: "For small and medium homes",
-          points: ["Needs about 300 sq ft of shade-free roof", "Panels, inverter, structure and installation", "{{utilityName}} {{netMeteringTerm}} paperwork", "Subsidy application support"],
+          tagline: "For homes with moderate KSEB bills",
+          points: ["About 300 sq ft of shade-free roof", "Tile, terrace or sheet-roof mounting", "KSEB net-metering file included", "Help with the full home subsidy"],
           ctaLabel: "Get a 3 kW quote",
           service: "residential-rooftop-solar",
         },
         {
           name: "5 kW",
           kw: 5,
-          tagline: "For larger homes and higher bills",
-          points: ["Needs about 500 sq ft of shade-free roof", "Panels, inverter, structure and installation", "{{utilityName}} {{netMeteringTerm}} paperwork", "Subsidy application support"],
+          tagline: "For larger homes with ACs and a pump",
+          points: ["About 500 sq ft of shade-free roof", "Room to add an EV charger later", "KSEB load and phase check included", "Help with the home subsidy"],
           ctaLabel: "Get a 5 kW quote",
           service: "residential-rooftop-solar",
         },
         {
           name: "6 kW and above",
-          tagline: "For villas, shops and high consumption",
-          points: ["Designed around your roof and load", "Three-phase systems where your connection needs it", "Commercial and industrial sizes on request"],
+          tagline: "For large homes, shops and institutions",
+          points: ["Designed around your load and roof", "Three-phase systems where KSEB requires them", "Schools, hospitals and factories on request"],
           ctaLabel: "Get a custom quote",
           service: "residential-rooftop-solar",
         },
         {
           name: "Hybrid + battery",
-          tagline: "Keep the power on during cuts",
-          points: ["Hybrid inverter and lithium battery", "Backup for the essential loads you choose", "Surplus still exported where {{netMeteringTerm}} allows"],
+          tagline: "For monsoon power cuts",
+          points: ["Hybrid inverter and lithium battery", "Keeps the lights, fridge and well pump running", "Surplus still exported to KSEB"],
           ctaLabel: "Get a hybrid quote",
           service: "hybrid-solar-battery-backup",
         },
       ],
-      footnote: "No fixed prices: cost depends on your roof, structure height and the equipment you choose. Every quote is itemised.",
+      footnote: "No fixed prices: cost depends on your roof type, the structure it needs and the brands you choose. Every quote is itemised.",
     },
-    // brands: {
-    //   headline: "Equipment we install",
-    //   groups: [
-    //     { label: "Panels", items: [{ name: "[Brand]", logo: "/images/brands/[brand].svg" }] },
-    //     { label: "Inverters", items: [{ name: "[Brand]" }] },
-    //     { label: "Batteries", items: [{ name: "[Brand]" }] },
-    //   ],
-    // },
+    brands: {
+      headline: "Brands we install",
+      intro: "Equipment from established makers, chosen for your roof, budget and backup needs. Your quote names the exact models.",
+      groups: [
+        {
+          label: "Solar, inverters and electrical",
+          items: [{ name: "TATA" }, { name: "Crompton" }, { name: "Panasonic" }, { name: "Deye" }, { name: "Growatt" }, { name: "GoodWe" }, { name: "L&T" }, { name: "Havells" }, { name: "Anchor" }, { name: "Polycab" }],
+        },
+      ],
+    },
   },
 
   landing: {
-    headline: "Get a free rooftop solar quote in {{city}}",
+    headline: "Get a free rooftop solar quote in Kottayam",
     subheadline:
-      "Tell us about your home or business. We size the system from your {{utilityName}} bill and show what the {{subsidyScheme}} subsidy covers.",
+      "Tell us about your home or institution. We size the system from your KSEB bill and roof, and show what the {{subsidyScheme}} subsidy covers.",
     bullets: [
-      "System sized to your bills and roof, not a standard package",
-      "Subsidy and {{utilityName}} {{netMeteringTerm}} paperwork handled",
+      "Free site survey, with mounting for tiled, terrace and sheet roofs",
+      "KSEB net-metering and subsidy paperwork handled",
       "On-grid and hybrid systems with battery backup",
-      "Itemised, written quote with every component and warranty",
+      "Itemised, written quote from a Kottayam-based team",
     ],
   },
 
@@ -216,7 +220,8 @@ const config: SiteConfigInput = {
     story: [
       "Green World Innovations is a rooftop solar company based in Kalambukad, Kottayam, serving homes, businesses and institutions across central Kerala.",
       "We design each system from the customer's own bills and roof, handle the KSEB paperwork ourselves, and stay available after commissioning.",
-      "[Add your founding story: who started the company, why, and what you learned from your first installations.]",
+      "Green World Innovations was established as a sister concern of Niram Agencies, with a vision to provide reliable and sustainable energy solutions.",
+      "We specialise in high-quality rooftop solar systems, home automation products and EV charging solutions, with professional installation and dependable after-sales service. Our commitment is to deliver innovative, customer-focused solutions that help homes and businesses embrace clean energy, smart living and a more sustainable future.",
     ],
     mission: "To make dependable solar power practical for every Kerala rooftop we work on.",
     values: [
@@ -225,7 +230,7 @@ const config: SiteConfigInput = {
       { title: "Clear paperwork", body: "Written quotes, warranty cards and approval status you can follow." },
       { title: "Long-term care", body: "A solar system is a long-term asset, and we plan service accordingly." },
     ],
-    certifications: [{ name: "[Add certification or empanelment, e.g. ANERT or KSEB approvals]" }],
+    certifications: [], // Add real certifications or approvals, e.g. { name: "ANERT empanelled" }
     philosophy:
       "Solar is a long-term asset. We choose equipment, structures and wiring with the long term in mind, and we tell customers plainly what they need and what they don't.",
   },
@@ -240,6 +245,8 @@ const config: SiteConfigInput = {
   },
 
   leadForm: {
+    // Public by design: Web3Forms keys are visible in the page HTML. Enquiries go to the email the key was created with.
+    web3formsAccessKey: "329e52e9-8f08-44cd-8319-e5dfcc6c26f3",
     web3formsSubject: "New solar enquiry — {{companyName}}",
     web3formsFromName: "{{companyName}} Website",
     successMessage: "Thank you. Our solar team will contact you shortly.",
@@ -259,7 +266,8 @@ const config: SiteConfigInput = {
     captcha: { provider: "turnstile" },
   },
 
-  features: defaultFeatures,
+  // Hidden until real numbers, reviews and projects are available. Set to true to show.
+  features: { ...defaultFeatures, trustStats: false, testimonials: false, projects: false },
 };
 
 export default config;

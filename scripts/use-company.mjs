@@ -2,7 +2,6 @@
 /**
  * Switch the active company to one of the folders in src/config/examples/.
  *   npm run use-company -- greenworld
- *   npm run use-company -- smartsol
  *
  * Copies <company>/site.config.ts, locations.ts, projects.ts, testimonials.ts and logo.svg
  * over the active files, and fixes the import paths in site.config.ts.

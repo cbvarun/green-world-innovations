@@ -21,7 +21,7 @@ Copy this into an issue or doc for each client.
 
 ## 2. Set up the project
 - [ ] Create a repo from the template (one repo per client)
-- [ ] Copy `src/config/examples/smartsol/` to `src/config/examples/<client>/`
+- [ ] Copy `src/config/examples/greenworld/` to `src/config/examples/<client>/`
 - [ ] Edit `site.config.ts`: company, seo, theme, contact, serviceAreas, **regional**, home, about, cta, leadForm
 - [ ] Edit `locations.ts` (their areas), `projects.ts`, `testimonials.ts`
 - [ ] `npm run use-company -- <client>`

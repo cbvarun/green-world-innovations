@@ -1,11 +1,11 @@
-# Rooftop Solar Website Template
+# Green World Innovations Website
 
-A reusable website template for rooftop solar installation and service companies.
+Website for Green World Innovations, a rooftop solar company in Kottayam, Kerala. Built from a reusable rooftop-solar website template.
 Next.js 15 (App Router) + TypeScript + Tailwind CSS 3.4 + shadcn/ui, exported as a **fully static site** for Cloudflare Pages. Lead forms post to **Web3Forms**.
 
 **One company = one config file.** Branding, contact details, regional utility facts, navigation, form options and page copy live in `src/config/site.config.ts`. Components never contain company details.
 
-Two sample companies ship with it: **Smartsol Systems** (Bengaluru, active) and **Green World Innovations** (Kottayam). Contact details are real; stats, ratings, projects, testimonials and certifications are **placeholders** and are clearly marked.
+The active company is **Green World Innovations** (Kottayam). Contact details are real; stats, ratings, projects, testimonials and certifications are **placeholders** and are clearly marked.
 
 ---
 
@@ -99,7 +99,7 @@ src/
 
 **Recommended: one Git repository per company.** Click **Use this template** on GitHub (or copy the folder), then:
 
-1. **Add the company folder.** Copy `src/config/examples/smartsol/` to `src/config/examples/<yourcompany>/`. It contains `site.config.ts`, `locations.ts`, `projects.ts`, `testimonials.ts` and `logo.svg`.
+1. **Add the company folder.** Copy `src/config/examples/greenworld/` to `src/config/examples/<yourcompany>/`. It contains `site.config.ts`, `locations.ts`, `projects.ts`, `testimonials.ts` and `logo.svg`.
 2. **Edit those files** (see section 4 and the [launch checklist](LAUNCH-CHECKLIST.md)).
 3. **Activate it:**
    ```bash
@@ -111,11 +111,10 @@ src/
 
 > Edit the **example folder** and re-run `use-company`, or edit the active files directly. If you edit the active files, copy them back into the example folder if you want to keep a saved version.
 
-Switching between the two shipped companies:
+Restoring the saved Green World config:
 
 ```bash
 npm run use-company -- greenworld
-npm run use-company -- smartsol
 ```
 
 ### Keeping a client site up to date with the template
@@ -158,7 +157,7 @@ Unknown tokens are left visible (not silently dropped), so typos are easy to spo
 
 ### Regional facts (important)
 
-Net-metering and subsidy rules differ by state and change over time. Everything region-specific comes from `regional` in the config. **Verify these for each client**, especially `utilityName`, `regulatorName`, and the subsidy note. The Mysuru page in the Smartsol sample mentions a different utility than BESCOM. Confirm it.
+Net-metering and subsidy rules differ by state and change over time. Everything region-specific comes from `regional` in the config. **Verify these for each client**, especially `utilityName`, `regulatorName`, and the subsidy note.
 
 ### Placeholders and samples
 
